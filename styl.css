@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,700;9..144,800;9..144,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+   :root {
+    --darkGreen: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --head: 2rem;
+    --text: 1rem;
+  }
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--cream);
+}
+
+.card-box{
+
+        display: flex;
+        background-color: white;
+        border-radius: 15px;
+        height: 45%;
+        width:37.5%;
+        position: absolute;
+    
+    
+}
+/* .img{
+    display: none;
+} */
+.pic{
+
+    
+        height: 100%;;
+        width: 40%;
+        overflow-y: none;
+        object-fit: cover;
+    
+}
+.image{
+    height: 100%;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+   
+}
+
+
+.content{
+    height:100%;
+    width: 60%;
+    overflow: hidden;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    padding-top: .5rem;
+    font-family: 'Fraunces', serif;
+}
+
+.card-text{
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    text-align: left;
+    margin: 1.5rem 2rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+.product{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: var(--text);
+    font-weight: 500;
+}
+.product_title{
+    font-family: 'Fraunces', serif;
+    font-size: var(--head);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0.6em 0 0.7em 0;
+}
+.description{
+    font-family: 'Montserrat', sans-serif;
+    width: 96%;
+    font-size: var(--text);
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 1.5em;
+    padding-right: 2rem;
+}
+
+.green_text{
+    
+        margin-right: 0.3em;
+        color: var(--darkGreen);
+      
+}
+.strike{
+    
+        text-decoration: line-through;
+        align-self: center;
+      
+}
+.btn {
+    display: block;
+    margin: 1em 0 1em 0;
+    background-color: var(--darkGreen);
+    width: 100%;
+    padding: 1em 0;
+    color: var(--white);
+    border: 0;
+    border-radius: 0.7em;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: hsl(156, 24%, 24%);
+  }
+  
+  .btn_img {
+    margin-right: 1em;
+    max-width: 100%;
+  }
+  .btn_text {
+    color: var(--white);
+  }
